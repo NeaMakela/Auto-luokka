@@ -7,7 +7,8 @@ public class autoHarjoitus {
 		auto.merkki="Saab";
 		auto.malli="9-3";
 		auto.bensanMaara=10;
-		auto.kiihdyta();
+		auto.naytaTiedot();
+		auto.tankkaa(70);
 	}
 
 }//EndOfMain
@@ -35,5 +36,17 @@ public void kiihdyta()
 	{
 		System.out.println("");
 	}
+}
+public void naytaTiedot()
+{
+	System.out.println("Merkki = " + merkki);
+	System.out.println("Malli = " + malli);
+	System.out.println("Bensan määrä = " + bensanMaara);
+}
+public void tankkaa (int tankkaus)
+{
+	System.out.println("Tankissa bensaa: " +bensanMaara);
+	System.out.println("Tankkaus: " +tankkaus);
+	System.out.println("Tankissa bensaa tankkauksen jälkeen: " +(bensanMaara+tankkaus));
 }
 }
